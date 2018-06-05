@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Cat, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it {should have_many :sufferings}
+  it { should belong_to :colony }
+  it { should have_one :adoption }
+  it { should have_many :sponsors }
 end

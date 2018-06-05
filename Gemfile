@@ -58,11 +58,18 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
 end
 
+<<<<<<< HEAD
 
 group :test do 
       gem 'shoulda','~> 3.5.0'
 end
 
 
+=======
+group :test do
+  gem 'shoulda', '~> 3.5.0'
+end
+
+>>>>>>> 7d836904e57e02f24c072cd45738c2c7e573dd3f
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
