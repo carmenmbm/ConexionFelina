@@ -3,7 +3,7 @@ class Cat < ApplicationRecord
   MAXIMUM_BIO_LENGTH  = 512
   MINIMUM_BIRTH_DATE  = Date.today
 
-  enum gender: [:male, :female]
+  enum gender: [:male, :female , :other]
   enum sterilized: [:yes, :no]
 
   has_many :sufferings

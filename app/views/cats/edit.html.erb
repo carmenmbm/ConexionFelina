@@ -1,0 +1,39 @@
+<%= form_for(@cat) do |f| %>
+    <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :bio %><br>
+    <%= f.text_area :bio %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate_date %>
+    <%= f.date_field :birthdate_date %>
+  </div>
+   <div class="field">
+    <%= f.label :abandoned_date %>
+    <%= f.date_field :abandoned_date %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.select(:gender, options_for_select([['male', 1], ['female', 2], ['other', 3]])) %>    
+  </div>
+   <div class="field">
+    <%= f.label :sterilized %>
+    <%= f.check_box :sterilized %>
+  </div>
+     <div class="field">
+    <%= f.label :colony_id %><br>
+    <%= f.text_field :colony_id %>
+  </div>
+  <br/>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+  
+  
+  
